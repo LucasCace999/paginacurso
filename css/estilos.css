@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.header{
+    height: 100vh;
+    background-image: linear-gradient(to top, #a18cd183 0%, #fbc2eb83 100%), url(/img/portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    width: 30vw;
+    height: 100%;
+    /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%); */
+    /* 02 */
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    /* 028 */
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    right: 0;
+    transform: translateX(110%);
+    transition:transform 0.3s ease-in-out;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread{
+    transform: translateX(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Proyect */
+
+.subtitulo{
+    color: #9f8ad0;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contenedor-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-info img{
+    width: 40%;
+}
+
+.school-info{
+    width: 45%;
+}
+
+.info{
+    margin-bottom: 20px;
+}
+
+.n-info{
+    margin-bottom: 7px;
+    color: #9f8ad0;
+}
+
+.number{
+    display: inline-block;
+    /* 02 */
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Tarjetas de proyecto */
+
+.project-cards{
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+    gap: 25px;
+    margin: 70px 0;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    margin-bottom: 0;
+}
+
+.background{
+    background-color: rgb(246, 241, 241);
+    background-position: center;
+    padding-bottom: 25px;
+}
+
+.project-cards h1{
+    justify-content: space-evenly;
+    margin: 60px;
+}
+
+.p-card h3, p{
+    text-align: left;
+    margin: 5px;
+    margin-top: 0;
+}
+.p-card{
+    /* border: 2px solid; */
+    text-align: right;
+    border-bottom: 3px solid;
+    border-color: rgb(97, 62, 97);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.project-cards .p-card a{
+    padding: 12px 7px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid;
+    /* background-color: rgb(219, 219, 231); */
+    background-color: #9f8ad0;
+    border-radius: 10px;
+    border-color: rgb(227, 227, 230);
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 10px;
+    text-align: right;
+    
+}
+
+.project-cards a:hover{
+    background-color: rgb(195, 150, 216);
+    transition: 500ms;
+    cursor: pointer;
+    border-color:  rgb(186, 138, 200) ;
+
+}
+
+.p-card img{
+    height: 120px;
+    width: 105px;
+    float: left;
+    margin: 20px;
+    margin-top: 0;
+}
+/* .project-cards .p-card{
+    border-top-width: thin;
+    border-right-width: thin;
+    border-bottom-width: thin;
+    border-left-width: thin; 
+    border-color: black;
+} */
+
+footer{
+    background: #9f8ad0;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color:#764ba2;
+}
+
+@media screen and (max-width: 800px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+
+    .titulo{
+        font-size: 40px;
+    }
+
+    .contenedor-info img{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    
+    .checklist-info{
+        width: 80%;
+    }
+
+    .info{
+        margin-bottom: 5px;
+    }
+
+    .contenedor-info{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);        justify-items: center;
+    }
+
+    .school-info{
+        width: 100%;
+    }
+
+    .img-galeria{
+        width: 45%;
+    }
+    
+    .agregarImagen{
+        width: 80%;
+    }
+
+    
+    .cont-expert{
+        width: 80%;
+    }
+    
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .contact-us p{
+        text-align: center;
+    }
+    
+    .project-cards{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .project-cards h3{
+        font-size: 20px;
+
+    }
+    .project-cards p{
+        font-size: 12px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    .menu-navegacion{
+        width: 65vw;
+    }
+
+    .hamburguer{
+        top: 20px;
+        right: 20px;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    
+
+    .social-media{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 95%;
+        margin-bottom: 40px;
+    }
+    
+}
